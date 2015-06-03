@@ -9,10 +9,22 @@
 #import "FISAppDelegate.h"
 @interface FISAppDelegate ()
 
+
 @end
 @implementation FISAppDelegate
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    int whiley = 0;
+    int me = whiley++;
+    int anvil = 50;
+   while (me <= anvil) {
+       NSLog(@"Meep Meep");
+       if (whiley % 10 == 0) {
+           NSLog(@"YOU'RE CUCKOO.");
+       }
+       whiley++;
+       me++;
+    }
+    
     return YES;
 }
 
